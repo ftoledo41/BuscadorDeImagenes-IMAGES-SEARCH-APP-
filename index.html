@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Images Search app</title>
+    <!-- Normalizar estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <section>
+    <header>
+      <div class="buscador">
+        <h1>Buscador de imágenes </h1>
+        <p>Busca y descarga imágenes de alta calidad</p>
+        <input type="search" id="searchInput" placeholder="Buscar imágenes gratuitas...">
+        <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+      </div>    
+    </header>
+    <div class="container">
+      <div id="results"></div>
+    </div>
+  </section>
+
+  <!-- Ventana modal -->
+<div class="modal" id="imageModal">
+  <div class="botones">
+    <span class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+    <button id="downloadButton"><i class="fa-solid fa-download"></i> Descargar imagen</button>
+  </div>    
+    <img src="" id="modalImage" alt="Modal Image">   
+</div>
+    <script src="js/app.js"></script>
+</body>
+</html>
